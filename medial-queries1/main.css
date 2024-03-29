@@ -2,11 +2,28 @@ body {
   background: blanchedalmond;
 }
 
-@media (min-width: 600px) {
-  .container {
-    flex-direction: row;
-  }
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }                  
+
+.b {
+  min-height: 60vh;
+  flex-grow: 5;
+}
+
+.a {
+  background-color: var(--dusty-emerald);
+  flex-grow: 2;
+}
+
+.c {
+  background-color: var(--sage);
+  flex-grow: 1;
+}                             
+
 
 :root {
   --pale-sage: #BFF4CB;
@@ -15,3 +32,9 @@ body {
   --deep-emerald: #354F52;
   --night-forest: #2F3E46;
 }  
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}                  
