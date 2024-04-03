@@ -1,3 +1,54 @@
 body {
   background: papayawhip;
 }
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}                  
+
+.b {
+  min-height: 60vh;
+  flex-grow: 1;
+}
+
+.a {
+  background-color: var(--dusty-emerald);
+  flex-grow: 5;
+}
+
+.c {
+  background-color: var(--sage);
+  flex-grow: 1;
+}                             
+
+
+:root {
+  --pale-sage: #BFF4CB;
+  --sage: #84A98C;
+  --dusty-emerald: #52796f;
+  --deep-emerald: #354F52;
+  --night-forest: #2F3E46;
+  --soft-cyan: #7ed1e9;
+  --bright-violet: #b23dde;
+  --very-soft-violet: #e6bff4;
+}  
+                 
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .b {
+    width: 60%;
+  }
+  .c {
+    width: 30%;
+  }
+}  
