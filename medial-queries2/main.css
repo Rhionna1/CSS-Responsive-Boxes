@@ -66,35 +66,45 @@ body {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
   .a {
     max-width: 100%;
     flex-basis: 100%;
+    order: 0;
   }
   .b {
     flex-basis: 75%;
     max-width: 80%;
     max-height: 33%;
+    order: 1;
   }
   .f {
     flex-basis: 25%; 
     max-width: 20%;
     max-height: 80%;
-    order: 2;
+    flex-grow: 2;
+    order: 3;
   }
   .c {
     flex-basis: 20%;
     max-width: 20%;
     max-height: 20%;
+    flex-grow: 1;
+    order:4;
   }
   .d {
     flex-basis: 20%;
     max-width: 20%;
     max-height: 20%;
+    flex-grow: 1;
+    order: 5;
   }
   .e {
     flex-basis: 20%;
     max-width: 20%;
     max-height: 20%;
+    flex-grow: 1;
+    order: 6;
   }
 }
