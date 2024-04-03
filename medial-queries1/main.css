@@ -22,16 +22,7 @@ body {
 .c {
   background-color: var(--sage);
   flex-grow: 1;
-}
-.d {
-  background-color: var(--soft-cyan);
-} 
-.e {
-  background-color: var(--bright-violet);
-}  
-.f {
-  background-color: var(--very-soft-violet);
-}                          
+}                             
 
 
 :root {
@@ -40,12 +31,8 @@ body {
   --dusty-emerald: #52796f;
   --deep-emerald: #354F52;
   --night-forest: #2F3E46;
-  --soft-cyan: #7ed1e9;
-  --bright-violet: #b23dde;
-  --very-soft-violet: #e6bff4;
 }  
                  
-/*
 @media (min-width: 600px) {
   .container {
     flex-direction: row;
@@ -61,6 +48,4 @@ body {
   .c {
     width: 30%;
   }
-}
-*/
-                             
+}                                  
